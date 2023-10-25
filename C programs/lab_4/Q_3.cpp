@@ -1,7 +1,7 @@
-//Pascal Triangle program in C
+
 #include <stdio.h>
 
-int fact(int n) //function to calculate factorial of a number
+int fact(int n) 
 {
   int a;
 
@@ -13,7 +13,7 @@ int fact(int n) //function to calculate factorial of a number
 
 int combination(int n, int r)
 {
-  return fact(n) / (fact(n - r) * fact(r)); // using the mathematical formula of combination nCr
+  return fact(n) / (fact(n - r) * fact(r)); 
 }
 
 int main()
@@ -21,7 +21,7 @@ int main()
   int rows;
   int i, j;
 
-  //number of rows of pascal's triangle to be printed
+  
   printf("Enter Number of Rows: ");
   scanf("%d", &rows);
 
