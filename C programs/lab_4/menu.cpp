@@ -13,7 +13,6 @@ int main(){
 		
 			case 1:
 	
-	            //code for factorial functionality
 	            printf("Enter an integer: ");
 	            scanf("%d", &num);
 	            n=num;
