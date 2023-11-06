@@ -3,20 +3,37 @@
 
 int main(){
 	
-	char s[50] = "ram is the @ 123 4 5 smartest boy";
+	char str[50] = "ram is the @ 123 smartest boy";
 	
-	int i,j,x = 0;
+	printf("Enter your string");
 	
-	j = strlen(s);
+	gets(str);
 	
-	for(i=0; i<j;i++){
+	int i = 0;
+	int freq1 = 0, freq2 = 0, freq3 = 0;
+	
+	while(str[i] != '\0'){
+		int x = int(str[i]);
 		
-		if(s[i] != ' '){
-			x++;
-		}
-	}
 	
-	printf("%d", x);
+			if(x> 47 && x<58){
+				freq2++;
+			}
+			else if(x> 64 && x<91){
+				freq1++;
+			}
+			else if(x> 96 && x<123){
+				freq1++;
+			}
+			else{
+				freq3++;
+			}				
+		
+		i++;
+	}	
+	printf("The number of characters, numbers, and special characters in the given string are %d, %d, and %d", freq1, freq2, freq3);
+		
 	
+
 	return 0;
 }
